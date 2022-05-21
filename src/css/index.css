@@ -1,0 +1,13 @@
+/* Abstratos */
+@import url(./abstracts/variables.css); /* Variáveis Globais*/
+@import url(./abstracts/keyframes.css); /* Animações */
+/* Componentes */
+@import url(./components/button.css);
+
+/* Estilos Gerais */
+html, body {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}

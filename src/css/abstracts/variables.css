@@ -1,0 +1,11 @@
+/* Variáveis CSS */
+:root {
+    --color-background: #1B2631;
+    --color-main: #F7FAFC;
+
+    --color-primary: #1D8AF7;
+    --color-secondary: #7A8CD6;
+    --color-tertiary: #F7861D;
+
+    --gradient-primary: linear-gradient(45deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
+}
