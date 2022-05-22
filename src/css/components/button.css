@@ -1,0 +1,25 @@
+/* Componente: Botão */
+.button {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 1.4rem 2rem;
+
+    color: var(--color-main);
+    background: var(--gradient-primary);
+
+    transition: transform 0.1s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.05, 1.05);
+}
+.button:active {
+    transform: scale(0.95, 0.95);
+}
