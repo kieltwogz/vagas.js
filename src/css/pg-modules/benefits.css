@@ -1,0 +1,17 @@
+.benefits{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 3rem;
+}
+.benefits__box{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.benefits h2{
+    margin:0;
+    color:var(--color-main);
+    font-size: 4.4rem;
+}
