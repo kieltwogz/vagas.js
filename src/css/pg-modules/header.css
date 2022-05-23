@@ -4,6 +4,9 @@
 
     padding-top: 4rem;
 }
+.header .card[on-screen] {
+    animation: fade-from-right 0.6s ease-in-out;
+}
 
 .header__top {
     width: 100%;
@@ -25,6 +28,9 @@
     max-width: 61rem;
 
     color: var(--color-main);
+}
+.header__content[on-screen] {
+    animation: fade-from-left 0.6s ease-in-out;
 }
 
 .header__content span {
@@ -52,6 +58,22 @@
     align-items: center;
 
     padding: 4rem 0rem;
+}
+.header__bottom[on-screen] {
+    animation: fade-from-left 0.6s ease-in-out;
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .header__bottom[on-screen] {
+        animation: none;
+    }
+    .header__content[on-screen] {
+        animation: none;
+    }
+    .header .card[on-screen] {
+        animation: none;
+    }
 }
 
 @media (max-width: 800px) {

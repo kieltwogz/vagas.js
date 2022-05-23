@@ -29,21 +29,21 @@
             <!-- Cabeçalho -->
             <header class="header" id="header">
                 <div class="header__top">
-                    <div class="header__content">
+                    <div class="header__content" show-animation>
                         <span>INTRODUÇÃO</span>
                         <h1>Integre Vagas.js à seu aplicativo agora!</h1>
                         <p><strong>Vagas.js</strong> é uma <strong>biblioteca simples</strong> com o objetivo de coletar, das mais diversas fontes, vagas atuais para <strong>estagiários</strong> e <strong>desenvolvedores júniors</strong>.</p>
-                        <a href="./src/js/lib/vagas.js" class="button">Baixar Vagas.js</a>
+                        <a class="button" href="./src/js/lib/vagas.js" >Baixar Vagas.js</a>
                     </div>
-                    <div class="card">
+                    <div class="card" show-animation>
                         <div class="card__background"></div>
                         <div class="card__wrapper">
                             <img class="card__image" src="./src/img/first-image.png" alt="Imagem promocional">
                         </div>
                     </div>
                 </div>
-                <div class="header__bottom">
-                    <a class="button button--rounded">
+                <div class="header__bottom" show-animation>
+                    <a class="button button--rounded" href="#example">
                         <img src="./src/svg/arrow-bottom.svg" alt="Seta para baixo">
                     </a>
                 </div>
@@ -52,26 +52,81 @@
             <!-- Seção de Apresentação -->
             <section class="apresentation" id="apresentation">
                 <article class="apresentation__article">
-                    <div class="apresentation__content">
+                    <div class="apresentation__content" show-animation>
                         <h2>Objetivo</h2>
                         <p>O <strong>foco principal</strong> foi disponibilizar um método de <strong>anexação</strong> dessas vagas em diversas outras aplicações, com o intuito de alcançar o máximo de iniciantes possível.</p>
                         <p>O mercado não é muito amigável, então é importante estar sempre atento nas <strong>melhores oportunidades que se encaixam no seu perfil</strong> - desde o HTML básico até o conhecimento de frameworks mais avançadas.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" show-animation>
                         <div class="card__background"></div>
                         <div class="card__wrapper">
                             <img class="card__image" src="./src/img/second-image.png" alt="Imagem promocional">
                         </div>
                     </div>
                 </article>
+                <article class="apresentation__article apresentation__article--inverse">
+                    <div class="apresentation__content" show-animation>
+                        <h2>De onde vem essas vagas?</h2>
+                        <p>Existem diversos lugares que estão sempre divulgando vagas, essa biblioteca foi construída a partir de diversos bots do Twiitter que são mantidos por desenvolvedores, que assim como nós, estão tentando <strong>melhorar o cenário do mercado de TI brasileiro</strong>.</p>
+                    </div>
+                    <div class="card" show-animation>
+                        <div class="card__background"></div>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="./src/img/third-image.png" alt="Imagem promocional">
+                        </div>
+                    </div>
+                </article>
+                <article class="apresentation__article">
+                    <div class="apresentation__content" show-animation>
+                        <h2>Problemas que queremos enfrentar.</h2>
+                        <p>O mercado atualmente possui muitas vagas para desenvolvedores mais experientes, - é <strong>mais seguro</strong> para uma empresa contratar alguém que já possui vivência na área - e <strong>carece de vagas para pessoas que estão tentando crescer</strong>, e quando possui, exigem experiência..</p>
+                    </div>
+                    <div class="card" show-animation>
+                        <div class="card__background"></div>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="./src/img/forth-image.png" alt="Imagem promocional">
+                        </div>
+                    </div>
+                </article>
             </section> 
 
             <!-- Seção de Benefícios -->
-            <section class="benefits" id="benefits">
+            <section class="benefits" id="benefits" show-animation>
+                <h2>Benefícios</h2>
+                <div class="benefits__box">
+                    <div class="simple-card">
+                        <div class="simple-card__left">
+                            <img src="./src/svg/star-icon.svg" alt="Ícone de estrela">
+                        </div>
+                        <div class="simple-card__right">
+                            <h3>Portabilidade</h3>
+                            <p>Essa biblioteca é completamente portátil, tendo duas versões: uma comprimida, e outra padrão.</p>
+                        </div>
+                    </div>
+                    <div class="simple-card">
+                        <div class="simple-card__left">
+                            <img src="./src/svg/star-icon.svg" alt="Ícone de estrela">
+                        </div>
+                        <div class="simple-card__right">
+                            <h3>Otimização</h3>
+                            <p>Não utilizamos nada além de JavaScript nativo para a realização das chamadas de API, sem dependências.</p>
+                        </div>
+                    </div>
+                    <div class="simple-card">
+                        <div class="simple-card__left">
+                            <img src="./src/svg/star-icon.svg" alt="Ícone de estrela">
+                        </div>
+                        <div class="simple-card__right">
+                            <h3>Confiabilidade</h3>
+                            <p>Desenvolvido por um grupo de alunos da UNIP - Universidade Paulista, essa aplicação se trata de um trabalho de APS.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </section>
 
             <!-- Seção de Exemplos (cartões) -->
-            <section class="example" id="example">
+            <section class="example" id="example" show-animation>
                 <h2>Exemplos</h2>
                 <article class="example__documentation">
                     <p>Use <span>await getVagas()</span> ou <span>getVagas().then(v => console.log(v))</span> para puxar as vagas da biblioteca.</p>
@@ -88,7 +143,7 @@
             </section>
 
             <!-- Seção do Formulário -->
-            <section class="newsletter" id="newsletter">
+            <section class="newsletter" id="newsletter" show-animation>
                 <h2>Se mantenha atualizado!</h2>
                 <p>Digite seu email para receber todas as últimas atualizações e novidades sobre a biblioteca.</p>
                 <form class="newsletter__form" method="POST" action="#header">

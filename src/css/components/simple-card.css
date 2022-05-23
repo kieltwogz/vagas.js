@@ -4,7 +4,7 @@
 
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     box-sizing: border-box;
     border-radius: 1.5rem;
@@ -27,7 +27,6 @@
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
-    height: 100%;
 }
 
 .simple-card__right {

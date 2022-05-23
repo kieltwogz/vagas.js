@@ -7,6 +7,9 @@
 
     padding: 3rem 0rem;
 }
+.example[on-screen]{
+    animation: fade-from-right 0.6s ease-in-out;
+}
 
 .example h2 {
     margin: 0;
@@ -72,6 +75,13 @@
 
     background-color: rgb(27, 27, 27);
     color: rgb(250, 230, 117);
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .example[on-screen]{
+        animation: none;
+    }
 }
 
 @media (max-width: 1000px) {

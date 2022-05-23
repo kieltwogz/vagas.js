@@ -1,0 +1,50 @@
+.benefits {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    gap: 3.5rem;
+    margin: 2.5rem 0rem;
+}
+.benefits[on-screen] {
+    animation: fade-from-left 0.6s ease-in-out;
+}
+
+.benefits h2 {
+    margin: 0;
+
+    font-size: 4.4rem;
+    color: var(--color-main);
+}
+
+.benefits__box {
+    width: 88vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .benefits[on-screen] {
+        animation: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .benefits h2 {
+        font-size: 2.5rem;
+    }
+
+    .benefits__box {
+        flex-flow: column;
+        align-items: stretch;
+        padding: 0rem 1.5rem;
+    }
+
+    .benefits__box .simple-card {
+        max-width: unset;
+    }
+}
