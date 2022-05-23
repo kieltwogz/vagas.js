@@ -1,0 +1,89 @@
+.example {
+    display: flex;
+    gap: 1.5rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 0rem;
+}
+
+.example h2 {
+    margin: 0;
+    font-size: 4.4rem;
+    color: var(--color-main);
+}
+
+.example__pratice {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.example__buttons {
+    display: flex;
+    gap: 2rem;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.example__wrapper {
+    position: relative;
+
+    display: flex;
+    gap: 3rem;
+    flex-flow: row nowrap; 
+
+    overflow-x: hidden;
+
+    width: 88vw;
+    min-height: 5rem;
+}
+
+.example__loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.example__documentation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0rem 1.5rem;
+}
+
+.example__documentation p {
+    color: var(--color-main);
+    font-size: 1.5rem;  
+    text-align: center;
+}
+
+.example__documentation span {
+    display: inline-block;
+
+    font-style: italic;
+
+    background-color: rgb(27, 27, 27);
+    color: rgb(250, 230, 117);
+}
+
+@media (max-width: 1000px) {
+    .example h2 {
+        font-size: 2.5rem;
+    }
+
+    .example__wrapper {
+        overflow-x: auto;
+    }
+
+    .example__buttons {
+        display: none;
+    }
+}

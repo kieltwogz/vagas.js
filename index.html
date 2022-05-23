@@ -7,52 +7,115 @@
 
         <!-- Folhas de Estilo -->
         <link rel="stylesheet" href="src/css/index.css"> <!-- Principal, é dependência de todas as outras. -->
-    </head>
+        <link rel="stylesheet" href="src/css/pg-modules/nav.css">
+        <link rel="stylesheet" href="src/css/pg-modules/header.css">
+        <link rel="stylesheet" href="src/css/pg-modules/apresentation.css">
+        <link rel="stylesheet" href="src/css/pg-modules/benefits.css">
+        <link rel="stylesheet" href="src/css/pg-modules/example.css">
+        <link rel="stylesheet" href="src/css/pg-modules/newsletter.css">
+        <link rel="stylesheet" href="src/css/pg-modules/footer.css">
+    </head> 
     <body>
-        <!-- Barra de Navegação / Mateus -->
+        <!-- Barra de Navegação -->
         <nav class="nav">
-
+            <a href="#header">Introdução</a>
+            <a href="#benefits">Benefícios</a>
+            <a href="#example">Exemplos</a>
+            <a href="#newsletter">Novidades</a>
         </nav>
 
         <!-- Conteúdo Principal -->
         <main>
             <!-- Cabeçalho -->
             <header class="header" id="header">
-                <a href="./src/js/lib/vagas.js" class="button">Baixar Vagas.js</a>
+                <div class="header__top">
+                    <div class="header__content">
+                        <span>INTRODUÇÃO</span>
+                        <h1>Integre Vagas.js à seu aplicativo agora!</h1>
+                        <p><strong>Vagas.js</strong> é uma <strong>biblioteca simples</strong> com o objetivo de coletar, das mais diversas fontes, vagas atuais para <strong>estagiários</strong> e <strong>desenvolvedores júniors</strong>.</p>
+                        <a href="./src/js/lib/vagas.js" class="button">Baixar Vagas.js</a>
+                    </div>
+                    <div class="card">
+                        <div class="card__background"></div>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="./src/img/first-image.png" alt="Imagem promocional">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <a class="button button--rounded">
+                        <img src="./src/svg/arrow-bottom.svg" alt="Seta para baixo">
+                    </a>
+                </div>
             </header>
 
-            <!-- Seção de Apresentação | Mateus -->
+            <!-- Seção de Apresentação -->
             <section class="apresentation" id="apresentation">
+                <article class="apresentation__article">
+                    <div class="apresentation__content">
+                        <h2>Objetivo</h2>
+                        <p>O <strong>foco principal</strong> foi disponibilizar um método de <strong>anexação</strong> dessas vagas em diversas outras aplicações, com o intuito de alcançar o máximo de iniciantes possível.</p>
+                        <p>O mercado não é muito amigável, então é importante estar sempre atento nas <strong>melhores oportunidades que se encaixam no seu perfil</strong> - desde o HTML básico até o conhecimento de frameworks mais avançadas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__background"></div>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="./src/img/second-image.png" alt="Imagem promocional">
+                        </div>
+                    </div>
+                </article>
             </section> 
 
-            <!-- Seção de Benefícios | João -->
+            <!-- Seção de Benefícios -->
             <section class="benefits" id="benefits">
             </section>
 
-            <!-- Seção de Exemplo de Uso (dentro do código) -->
-            <section class="use-example" id="use-example">
-
-            </section>
-
-            <!-- Seção de Exemplos (cartões) | Grupo -->
+            <!-- Seção de Exemplos (cartões) -->
             <section class="example" id="example">
-
+                <h2>Exemplos</h2>
+                <article class="example__documentation">
+                    <p>Use <span>await getVagas()</span> ou <span>getVagas().then(v => console.log(v))</span> para puxar as vagas da biblioteca.</p>
+                </article>
+                <article class="example__pratice">
+                    <div class="example__wrapper">
+                        <img class="example__loading" src="./src/svg/scroll-icon.svg">
+                    </div>
+                    <div class="example__buttons">
+                        <button id="example__left" class="button button--rounded">&#60;</button>
+                        <button id="example__right" class="button button--rounded">&#62;</button>
+                    </div>
+                </article>
             </section>
 
-            <!-- Seção do Formulário | Murilo de Batatais-->
+            <!-- Seção do Formulário -->
             <section class="newsletter" id="newsletter">
-
+                <h2>Se mantenha atualizado!</h2>
+                <p>Digite seu email para receber todas as últimas atualizações e novidades sobre a biblioteca.</p>
+                <form class="newsletter__form" method="POST" action="#header">
+                    <input type="text" name="email" placeholder="Digite seu email">
+                    <input type="submit" class="button" value="Inscrever-se">
+                </form>
             </section>
         </main>
 
         <!-- Rodapé -->
         <footer class="footer">
-
-        </footer>
+            <p>
+                Desenvolvido por
+                <strong>Ezequiel Nilo</strong>,
+                <strong>Mateus Marchioni</strong>,
+                <strong>João Gabriel</strong>,
+                <strong>Murilo Sanches</strong>,
+                <strong>Murilo Machado</strong>
+            </p>
+        </footer> 
 
         <!-- Bibliotecas / Dependências -->
         <script src="src/js/lib/vagas.js"></script>
         <!-- Scripts -->
         <script src="src/js/index.js"></script>
+        <script src="src/js/pg-modules/example.js"></script>
     </body>
 </html>
+
+

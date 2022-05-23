@@ -1,0 +1,52 @@
+/* Componente: Cartão */
+.card {
+    position: relative;
+
+    width: 59rem;
+    height: 40rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.card__wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 5;
+
+    overflow: hidden;
+    border-radius: 3.5rem;
+}
+
+.card__background {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 3.5rem;
+
+    z-index: 1;
+
+    background: var(--gradient-primary);
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .card__background {
+        left: 0;
+    }
+
+    .card {
+        height: auto;
+    }
+}
